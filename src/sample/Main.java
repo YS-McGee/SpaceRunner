@@ -8,12 +8,10 @@ import javax.swing.text.View;
 
 public class Main extends Application {
 
+    // start() is where it start to run, not main()
     @Override
     public void start(Stage primaryStage) throws Exception{
-//        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-//        primaryStage.setTitle("Hello World");
-//        primaryStage.setScene(new Scene(root, 300, 275));
-//        primaryStage.show();
+
         try {
             ViewManager manager = new ViewManager();
             primaryStage = manager.getMainStage();
